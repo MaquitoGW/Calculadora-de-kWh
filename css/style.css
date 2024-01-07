@@ -1,0 +1,146 @@
+:root {
+    --fundo: #000000f7;
+    --primario: orange;
+    --branco: #fff;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 10px;
+    background: var(--fundo);
+    color: var(--branco);
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background: var(--primario);
+    margin: -10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primario);
+}
+
+.corpo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.corpo h4 {
+    margin-bottom: 10px;
+}
+
+.corpo label {
+    width: 100%;
+    font-size: 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.corpo label span {
+    appearance: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+}
+
+.corpo label input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.corpo .botoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.corpo button {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    margin: 0 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--branco);
+    background: var(--primario);
+    cursor: pointer;
+}
+
+
+.corpo button[red] {
+    background: red;
+}
+
+.resultado {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    background: var(--branco);
+    color: black;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resultado h3 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* Tela de erro  */
+
+.err {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+}
+
+.err span {
+    width: 200px;
+    content: url(img/erro.png);
+    margin-bottom: 10px;
+}

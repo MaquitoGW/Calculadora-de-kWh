@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de kWh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Kwh.svg" type="image/svg">
+</head>
+
+<body>
+    <nav>Calculadora de kWh</nav>
+    <main>
+    <form id="form" class="corpo">
+        <h4>Informações:</h4>
+        <label><span>Nome do aparelho: </span><input required type="text" id="aparelho" placeholder="Insira aqui"></label>
+        <label><span>Voltagem do aparelho (v): </span><input required type="text" id="volts" placeholder="Insira aqui apenas números"></label>
+        <label><span>Amperagem do aparelho (a): </span><input required type="text" id="amperes" placeholder="Insira aqui apenas números"></label>
+        <label><span>Tempo ligado: </span><input required type="text" id="tempo" placeholder="Insira aqui o tempo em horas"></label>
+        <label><span>Tarifa da Cemig: </span><input required type="text" id="tarifa" placeholder="Insira aqui apenas números"></label>
+
+        <div class="botoes">
+            <button type="submit">Calcular</button>
+            <button red type="reset">Remover</button>
+        </div>
+    </form>
+    <div class="resultado" id="result">Agurdando informações...</div>
+    </main>
+    <footer>Desenvolvido por <a href="https://github.com/MaquitoGW">MaquitoGW</a> @ 2023 - <a href="">MIT license</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
