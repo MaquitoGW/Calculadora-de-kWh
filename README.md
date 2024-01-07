@@ -12,8 +12,8 @@ Este projeto é uma calculadora de consumo de energia elétrica (kWh) que permit
 
 1. **Clonar o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/calculadora-kwh.git
-   cd calculadora-kwh
+   git clone https://github.com/MaquitoGW/Calculadora-de-kWh.git
+   cd Calculadora-de-kWh
    ```
 
 2. **Abrir no Navegador:**
